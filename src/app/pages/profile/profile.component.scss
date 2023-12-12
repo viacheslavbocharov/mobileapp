@@ -1,0 +1,156 @@
+@import "vars";
+@import "mixins";
+
+.container {
+  max-width: calc(315px + 60px);
+  //width: 100%;
+  padding: 0 30px;
+  margin-inline: auto;
+}
+
+.user {
+  margin-top: 26px;
+  margin-bottom: 40px;
+
+  &__main {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    img {
+      width: 120px;
+      height: 120px;
+      flex-shrink: 0;
+      border-radius: 120px;
+      background: lightgray 50% / cover no-repeat, #c4c4c4;
+    }
+  }
+
+  &__info {
+  }
+
+  &__name {
+    color: $c-section-title;
+    font-family: var(--ff);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+
+  &__role {
+    color: $c-section-title;
+    font-family: var(--ff);
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.6;
+    margin-bottom: 11px;
+  }
+
+  &__change {
+    color: $c-section-title;
+    font-family: var(--ff);
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration-line: underline;
+    a {
+      color: $c-section-title;
+    }
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__side {
+  }
+
+  &__side-title {
+    color: $c-section-title;
+    font-family: var(--ff);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  &__side-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  &__side-item {
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-family: var(--ff);
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+.purple {
+  color: $c-purple;
+  background: $c-purple-bacground;
+}
+
+.green {
+  color: $c-green;
+  background: $c-green-bacground;
+}
+.orange {
+  color: $c-orange;
+  background: $c-orange-bacground;
+}
+
+.pink {
+  color: $c-pink;
+  background: $c-pink-bacground;
+}
+
+.report {
+    padding-bottom: 74px;
+
+  &__title {
+    color: $c-section-title;
+    font-family: var(--ff);
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  &__item {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  &__icon {
+  }
+
+  &__item-title {
+    font-family: var(--ff);
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  &__desc {
+    font-family: var(--ff);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.6;
+  }
+}
+.purple {
+}

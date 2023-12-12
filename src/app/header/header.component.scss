@@ -1,0 +1,102 @@
+@import "vars";
+@import "mixins";
+
+.container {
+  max-width: calc(315px + 60px);
+  padding: 0 30px;
+  margin-inline: auto;
+  //position: relative;
+}
+
+.header {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  z-index: 1;
+
+  &__menu {
+  }
+
+  &__title {
+    color: $c-icon;
+    text-align: center;
+    font-family: var(--ff);
+    font-size: 16rem;
+    font-weight: 500;
+  }
+
+  &__settings {
+  }
+}
+
+.wrapper {
+  width: 100%;
+  background: #fff;
+  position: sticky;
+  top: 0;
+}
+
+/*
+.sidebar {
+ position: absolute;
+ width: 100%;
+ top: 0;
+ left: 0;
+
+
+  &__nav {
+    width: 70%;
+    height: 100vh;
+    position: absolute;
+    //left: 0;
+    //top: 0;
+    background: red;
+    background: #d994a7;
+    //transform: translateX(-400%);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+ &__close {
+    position: absolute;
+    top: 12px;
+    left: 60%;
+  }
+
+  &__a {
+  }
+
+  &__backdrop {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: yellow;
+    z-index: 9;
+  }
+}*/
+
+.sidebar {
+  position: absolute;
+  width: 70%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+
+  background: red;
+
+  &__close {
+  }
+
+  &__a {
+  }
+}
+.material-icons {
+}
